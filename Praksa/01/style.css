@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: rgb(238, 227, 227);
+  z-index: 2;
+  position: fixed;
+}
+.logo {
+  width: 30%;
+  float: left;
+  text-align: left;
+  line-height: 50px;
+  padding-left: 8rem;
+}
+.logo a {
+  text-decoration: none;
+  color: #000000;
+}
+nav {
+  line-height: 50px;
+  padding-right: 7rem;
+  word-spacing: 5px;
+}
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+nav a:hover {
+  color: #000000;
+  text-decoration: underline black;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-holder {
+  height: 75vh;
+}
+.text-s1 {
+  text-align: center;
+  padding: 6em;
+}
+.btn-s1 {
+  background-color: gray;
+  text-align: center;
+  padding: 6em;
+}
+.frame-btn {
+  text-align: center;
+  margin: 10px auto;
+}
+button {
+  margin: 20px;
+  outline: none;
+}
+.btn-s1-text2 {
+  background: transparent;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.s2 {
+  background-color: white;
+}
+.s2-heading {
+  padding: 2% 12% 2% 12%;
+}
+.s2-text {
+  margin: 0px auto;
+  padding: 0px 10px;
+  text-align: center;
+  display: inline;
+  font-size: 24px;
+  position: relative;
+}
+.s2-block1 {
+  padding: 3% 2% 2%;
+}
+.block1-img1 {
+  float: left;
+}
+.block1-text1 {
+  padding-left: 17em;
+  text-align: left;
+}
+.btn-s2 {
+  background: transparent;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.s2-block2 {
+  padding: 2%;
+}
+.block2-img1 {
+  float: right;
+}
+.block2-text1 {
+  padding-right: 17em;
+  text-align: left;
+}
+.s3 {
+  background-color: rgb(230, 230, 230);
+}
+.s3-heading {
+  padding: 2% 12% 2% 12%;
+}
+.s3-text {
+  margin: 0px auto;
+  padding: 0px 10px;
+  text-align: center;
+  display: inline;
+  font-size: 24px;
+  position: relative;
+}
+.s3-img-holder {
+  height: 300px;
+  display: block;
+  text-align: center;
+}
+.icons {
+  text-align: center;
+}
+footer {
+  background-color: rgb(75, 73, 73);
+}
+.ft {
+  height: 500px;
+}
+.ft-heading {
+  color: rgb(255, 255, 255);
+  margin-left: 18em;
+  padding-top: 5em;
+}
+.ft-text {
+  color: rgb(255, 255, 255);
+  margin-left: 18em;
+  padding-top: 1em;
+  width: 300px;
+  word-wrap: break-word;
+}
+.social-media {
+  text-align: right;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+.fa-pinterest {
+  color: white;
+}
+.fa-google {
+  color: white;
+}
