@@ -22,12 +22,21 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <script
       src="https://kit.fontawesome.com/4c44b9ed88.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
   </head>
 
@@ -44,7 +53,7 @@
               <div class="icon cancel-btn"><i class="fa-solid fa-x"></i></div>
               <li><a class="active" href="index.html">Početna</a></li>
               <li class="dropdown">
-                <a href="#about" class="dropbtn">O nama</a>
+                <a class="dropbtn">O nama</a>
                 <div class="dropdown-content">
                   <a href="about.html">O StreetGainZu</a>
                   <a href="about.html">O Street Workoutu</a>
@@ -70,91 +79,98 @@
           <div class="col-lg-12 col-11">
             <div class="main-title text-center">
               <div data-aos="zoom-in-down">
-                Dobrodošli na službenu StreetGain<span>Z</span> stranicu!
+                Dobrodošli na službenu <br />
+                StreetGain<span>Z</span> stranicu!
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 position-relative justify-self-center">
-          <a href="#about" class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
+          <div data-aos="zoom-in-down">
+            <a href="#about" class="arrow page-scroll">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
         </div>
       </div>
       <!-- KRAJ PROSTORA ZA GLAVNI NATPIS -->
-      <div class="about container pt-5">
+      <div id="about" class="about container pt-5">
         <!-- ABOUT SEKCIJA -->
-        <div class="row justify-content-around">
-          <div
-            class="col-lg-7 col-10 text-center flex-column justify-content-center d-flex"
-          >
-            <div data-aos="fade-right">
-              <div id="about" class="title">Što je StreetGainZ?</div>
-              <p class="my-5">
-                Pozdrav svima, mi smo StreetGainZ, street workout zajednica koja
-                aktivno djeluje na području Republike Hrvatske od 2019. godine.
-                Naše djelovanje se temelji na popularizaciji street workouta kao
-                relativno mladoga sporta kroz razne sadržaje edukativnog i
-                zabavnog karaktera. Cilj je potaknuti što više ljudi različitih
-                uzrasta na bavljenje tjelesnom aktivnošću kroz metode uličnog
-                treninga.
-              </p>
-              <button type="button" class="btn btn-outline-dark btn-lg mx-auto">
-                <a href="about.html">Želiš znati više?</a>
-              </button>
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+          <div class="row justify-content-around">
+            <div
+              class="col-lg-7 col-10 text-center flex-column justify-content-center d-flex"
+            >
+              <div data-aos="fade-right">
+                <div class="title">Tko smo mi?</div>
+                <p class="my-5">
+                  Pozdrav svima, mi smo StreetGainZ, street workout zajednica
+                  koja aktivno djeluje na području Republike Hrvatske od 2019.
+                  godine. Naše djelovanje se temelji na popularizaciji street
+                  workouta kao relativno mladoga sporta kroz razne sadržaje
+                  edukativnog i zabavnog karaktera. Cilj je potaknuti što više
+                  ljudi različitih uzrasta na bavljenje tjelesnom aktivnošću
+                  kroz metode uličnog treninga.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg mx-auto"
+                >
+                  <a href="about.html">Saznaj više o nama?</a>
+                </button>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-10">
-            <div data-aos="fade-left" data-aos-duration="1500">
-              <img class="about-img" src="images/tim.jpg" alt="tim" />
+            <div class="col-lg-4 col-10">
+              <div data-aos="fade-left" data-aos-duration="1500">
+                <img class="about-img" src="images/galerija-4.jpg" alt="tim" />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- KRAJ ABOUT SEKCIJE -->
 
-      <div class="about-sw container">
-        <div class="row justify-content-around my-5">
-          <div class="col-lg-4 col-10">
-            <div data-aos="fade-up" data-aos-anchor-placement="top-center">
-              <img
-                class="about-sw-img"
-                src="images/Artboard 1.png"
-                alt="podjela-swa"
-              />
+      <div id="about-sw" class="about-sw container">
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+          <div class="row justify-content-around my-5">
+            <div class="col-lg-4 col-10">
+              <div data-aos="fade-up">
+                <img
+                  class="about-sw-img"
+                  src="images/galerija-1.jpg"
+                  alt="podjela-swa"
+                />
+              </div>
             </div>
-          </div>
-          <div
-            class="col-lg-8 text-center flex-column justify-content-center d-flex"
-          >
-            <div data-aos="fade-down" data-aos-anchor-placement="top-center">
-              <div class="title">Što je Street Workout?</div>
-              <p class="my-5">
-                Ulično vježbanje ili Street Workout je relativno novi sport koji
-                ima za cilj promovirati bazično vježbanje. Podsjetimo, bazične
-                vježbe su zgibovi, sklekovi, propadanje, ruski zgibovi i
-                čučnjevi. One tijelo dovode do lijepog i skladnog izgleda, ali i
-                do povećavanja određenih preformansi tijela. Naime, ono postaje
-                eksplozivnije, izdržljivije, ali i puno snažnije.
-              </p>
-              <p class="mb-1">
-                Osim bazičnih vježbi, postoje i razni statični i dinamički
-                elementi koji su također dio ovog sporta. To su “ljudska
-                zastava”, prednja i stražnja vaga, “planche”… Treninzi se
-                odvijaju u tzv. Street Workout parkovima, ali se mogu izvoditi
-                bilo gdje, s obzirom na veliku mogućnost improvizacije i
-                fleksibilnosti samog sporta. Čar ovog sporta i jest ta
-                domišljatost i kreativnost!
-              </p>
-              <button
-                type="button"
-                class="btn btn-outline-dark btn-lg mt-5 mx-auto"
-              >
-                <a href="about.html">Zanima te povijest ovog sporta?</a>
-              </button>
+            <div
+              class="col-lg-8 text-center flex-column justify-content-center d-flex"
+            >
+              <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="title">Što je Street Workout?</div>
+                <p class="my-5">
+                  Ulično vježbanje (eng. Street workout) je relativno novi sport
+                  koji ima za cilj promovirati bazično vježbanje. Podsjetimo,
+                  bazične vježbe su zgibovi, sklekovi, propadanje, ruski zgibovi
+                  i čučnjevi. One tijelo dovode do lijepog i skladnog izgleda i
+                  ono postaje eksplozivnije, izdržljivije, ali i puno snažnije.
+                </p>
+                <p class="mb-1">
+                  Osim bazičnih vježbi, postoje i razni statični i dinamički
+                  elementi koji su također dio ovog sporta, a među popularnijima
+                  možemo izdvojiti zastavu (eng. human flag), stoj na rukama
+                  (eng. handstand), prednju i stražnju vagu (eng. front and back
+                  lever) i planche.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg mt-5 mx-auto"
+                >
+                  <a href="about.html">Želiš saznati više o ovom sportu?</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -163,75 +179,27 @@
 
       <div class="gallery container mt-5">
         <!-- GALLERY SEKCIJA -->
-        <div data-aos="fade-down" data-aos-anchor-placement="center-bottom">
-          <div
-            id="galleryCarousel"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#galleryCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#galleryCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#galleryCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div
-                class="carousel-item active text-center"
-                data-bs-interval="31000"
-              >
-                <img src="images/3.png" class="d-block" alt="..." />
+        <div data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/tim2.png" alt="" />
               </div>
-              <div class="carousel-item" data-bs-interval="31000">
-                <img src="images/1.png" class="d-block" alt="..." />
+              <div class="swiper-slide">
+                <img src="images/grupni-2.png" alt="" />
               </div>
-              <div class="carousel-item" data-bs-interval="31000">
-                <img src="images/2.png" class="d-block" alt="..." />
+              <div class="swiper-slide">
+                <img src="images/grupni-1.png" alt="" />
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#galleryCarousel"
-              data-bs-slide="prev"
-            >
-              <span>
-                <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
-              </span>
-              <span class="visually-hidden">Prethodna</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#galleryCarousel"
-              data-bs-slide="next"
-            >
-              <span>
-                <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
-              </span>
-              <span class="visually-hidden">Sljedeća</span>
-            </button>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
           <div class="row">
             <div class="col-lg-12 text-center mt-3">
               <button type="button" class="btn btn-outline-dark btn-lg">
-                <a href="gallery.html">Pogledaj cijelu galeriju</a>
+                <a href="gallery.html">Pogledaj cijelu galeriju!</a>
               </button>
             </div>
           </div>
@@ -280,7 +248,7 @@
             <div
               class="col-lg-7 col-10 text-center flex-column justify-content-center d-flex"
             >
-              <div data-aos="flip-left" data-aos-anchor-placement="top-bottom">
+              <div data-aos="fade-down" data-aos-anchor-placement="top-bottom">
                 <div id="map" class="title">
                   Pronađi park u svojoj blizini
                   <i class="fa-solid fa-location-dot"></i>
@@ -303,8 +271,8 @@
               </div>
             </div>
             <div class="col-lg-5 col-10">
-              <div data-aos="flip-right" data-aos-anchor-placement="top-bottom">
-                <img class="map-img" src="images/map1.jpg" alt="" />
+              <div data-aos="fade-down">
+                <img class="map-img" src="images/TRAZILICA2.png" alt="" />
               </div>
             </div>
           </div>
@@ -318,9 +286,7 @@
           <div class="row justify-content-center">
             <div class="col-11">
               <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                <div class="title align-left">
-                  Najčešća pitanja<i class="fa-solid fa-question"></i>
-                </div>
+                <div class="title align-left">Najčešća pitanja?</div>
               </div>
               <div
                 class="col-11 accordion accordion-flush mt-3"
@@ -386,11 +352,12 @@
                         i druge privatne obaveze nismo u stanju ići često po
                         drugim gradovima no imamo veliku želju jer kada smo
                         prošle godine na ljeto organizirali grupni trening u
-                        Splitu odaziv ekipe je bio ogroman pa nam je to veliki
-                        motiv za naprijed tako da ako se nekad malo oslobodi
-                        raspored sigurno ćemo nešto organizirati tako da
-                        zapratite nas na instragramu kako bi bili na vrijeme
-                        obavješteni.
+                        Splitu odaziv ekipe je bio ogroman te smatramo da je
+                        takav vid organiziranja treninga veoma dobar zbog
+                        upoznavanja članova StreetGainZa sa svojom publikom,
+                        međusobnog izmjenjivanja iskustava te naravno druženja.
+                        Za daljnje grupne treninge pratite nas na instagramu jer
+                        tamo izlaze sve obavijesti vezano za to.
                       </p>
                     </div>
                   </div>
@@ -449,9 +416,9 @@
                         Zadnje širenje tima je bilo kada su se priključili
                         Nikola i Erwin. Za sada nije u planu neko novo širenje,
                         svatko ima svoju zadaću i ulogu tako da stvari
-                        funkcioniraju dobro, no sve je moguće u budućnosti tako
-                        da zapratite nas na instagramu kako bi saznali sve na
-                        vrijeme.
+                        funkcioniraju dobro. Opciju širenja tima u budućnosti
+                        nećemo isključiti, ali trenutno smatramo da nas je
+                        dovoljno i nismo u potrazi za novim članovima.
                       </p>
                     </div>
                   </div>
@@ -511,11 +478,9 @@
                   >
                     <div class="accordion-body">
                       <p>
-                        Zbog činjenice da je većina članova na faksu zbog
-                        količine obaveza i manjka slobodnog vremena nismo u
-                        stanju odvojiti vrijeme za sastavljanje kvalitetnog
-                        plana no *spoiler alert* aktivno se radi na tom projektu
-                        tako da pratite napredak
+                        Zbog trenutnog manjka slobodnog vremena nismo u stanju
+                        odvojiti vrijeme za sastavljanje kvalitetnog plana no
+                        aktivno se radi na tom projektu tako da pratite napredak
                         <i class="fa-solid fa-arrow-right"></i>
                         <a href="shop.html">ovdje</a>.
                       </p>
@@ -529,53 +494,63 @@
       </div>
       <!-- KRAJ FAQ SEKCIJE -->
 
-      <div class="form index-form container mt-5">
-        <!-- POČETAK INDEX FORM SEKCIJE -->
-        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
-          <div class="row justify-content-center">
-            <div data-aos="fade-down" data-aos-anchor-placement="top-bottom">
-              <div class="col-11 title">Želiš surađivati s nama?</div>
-              <div class="col-12 subtitle mb-3">
-                Pošalji nam poruku kroz obrazac ili direktno na mail
-                <span>streetgainz1@gmail.com</span> s naslovom "SURADNJA"
+      <form>
+        <div class="form index-form container mt-5">
+          <!-- POČETAK INDEX FORM SEKCIJE -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+            <div class="row justify-content-center">
+              <div data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+                <div class="col-11 title">
+                  Imaš pitanje za nas ili želiš suradnju?
+                </div>
+                <div class="col-12 subtitle mb-3">
+                  Kontaktiraj nas putem našeg maila
+                  <span>streetgainz1@gmail.com</span> ili putem ovog obrasca u
+                  prilogu!
+                </div>
               </div>
-            </div>
-            <div class="mb-3 col">
-              <input
-                type="text"
-                id="name"
-                class="form-control"
-                placeholder="Unesite Vaše ime"
-              />
-            </div>
-            <div class="mb-3 col">
-              <input
-                type="email"
-                id="email"
-                class="form-control"
-                placeholder="name@example.com"
-                required
-                checked
-              />
-            </div>
-            <div class="mb-3 col-12">
-              <textarea
-                id="textbox"
-                class="form-control"
-                cols="15"
-                rows="8"
-                placeholder="Prostor za vašu poruku..."
-              >
-              </textarea>
-            </div>
-            <div class="mt-3 col-12 text-center">
-              <button type="button" class="btn btn-outline-dark btn-lg">
-                <a href="#">Pošalji</a>
-              </button>
+              <div class="mb-3 col-sm-6">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Unesite Vaše ime"
+                  required
+                />
+              </div>
+              <div class="mb-3 col-sm-6">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Unesite email oblika name@example.com"
+                  required
+                  checked
+                />
+              </div>
+              <div class="mb-3 col-12">
+                <textarea
+                  id="textbox"
+                  class="form-control"
+                  cols="15"
+                  rows="8"
+                  placeholder="Prostor za vašu poruku..."
+                  value=""
+                  required
+                ></textarea>
+              </div>
+              <div class="mt-3 col-12 text-center">
+                <button
+                  type="submit"
+                  class="btn btn-outline-dark btn-lg text-white"
+                >
+                  Pošalji!
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
       <!-- KRAJ INDEX FORM SEKCIJE -->
     </main>
 
@@ -589,19 +564,19 @@
             <img src="images/logo.png" alt="" />
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-            <h5 class="text-white mb-3">IZBORNIK</h5>
+            <div class="ftext mb-2">IZBORNIK</div>
             <ul class="list-unstyled fmenu">
               <li><a href="index.html">Početna</a></li>
               <li><a href="about.html">O nama</a></li>
               <li><a href="shop.html">Shop</a></li>
               <li><a href="gallery.html">Galerija</a></li>
               <li><a href="park-search.html">Pronađi park</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#faq">Najčešća pitanja</a></li>
               <li><a href="contact.html">Kontakt</a></li>
             </ul>
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-            <h5 class="text-white mb-3">Newsletter</h5>
+            <div class="ftext mb-3">Newsletter</div>
             <p class="small text-white">
               Prati najnovije informacije o našem radu i svim našim događajima!
             </p>
@@ -623,7 +598,7 @@
                 </button>
               </div>
             </form>
-            <h5 class="text-white mb-3">DRUŠTVENE MREŽE</h5>
+            <div class="ftext mb-3">DRUŠTVENE MREŽE</div>
             <ul
               class="list-unstyled social d-flex align-items-center justify-content-center"
             >
@@ -674,6 +649,8 @@
       <!-- KRAJ FOOTER SEKCIJE -->
     </footer>
 
+    <!-- SCRIPT ZA INDEX FORMU -->
+
     <script>
       // SCRIPT ZA NAVBAR I OSTALE ANIMACIJE
       const body = document.querySelector(" body");
@@ -711,6 +688,41 @@
     <script>
       AOS.init({
         duration: 1200,
+      });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- JQUERY ZA SCROLL -->
+    <script>
+      $("a.page-scroll").on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate(
+          {
+            scrollTop: $($(this).attr("href")).offset().top + 90,
+          },
+          50
+        );
       });
     </script>
   </body>
